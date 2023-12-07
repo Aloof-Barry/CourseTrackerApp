@@ -13,11 +13,35 @@
         android:theme="@style/Theme.CourseTrackerApp"
         tools:targetApi="31">
         <activity
+            android:name=".activity.AssessDetailAct"
+            android:exported="false"
+            android:label="Assessment Details"/>
+        <activity
+            android:name=".activity.CourseDetailAct"
+            android:exported="false"
+            android:label="Course Details"/>
+        <activity
+            android:name=".activity.TermDetailAct"
+            android:exported="false"
+            android:parentActivityName=".activity.AllTermsAct"
+            android:label="Term Details"/>
+        <activity
+            android:name=".activity.AllAssessAct"
+            android:exported="false"
+            android:label="Assessments"/>
+        <activity
+            android:name=".activity.AllCoursesAct"
+            android:exported="false"
+            android:label="Courses"/>
+        <activity
             android:name=".activity.AllTermsAct"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".activity.MainActivity"
+            android:label="Terms"/>
         <activity
             android:name=".activity.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="Home Screen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
